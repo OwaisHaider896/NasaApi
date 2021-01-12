@@ -45,7 +45,7 @@ function Signup() {
         />
       </label>
       <button onClick={handleSubmit}>Signup</button>
-      <div>{error ? "something went wrong" : ""}</div>
+      <div className="color">{error ? "Something went wrong" : ""}</div>
     </div>
   );
 }

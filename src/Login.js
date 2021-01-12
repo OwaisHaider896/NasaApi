@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
-
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -53,7 +52,7 @@ function Login() {
       <button onClick={handleLogin}>Login</button>
 
       <Link to="/signup">Sign Up</Link>
-      <div>{error ? "Something went wrong" : ""}</div>
+      <div className="color">{error ? "Something went wrong" : ""}</div>
     </div>
   );
 }
